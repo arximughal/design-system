@@ -1,0 +1,45 @@
+{
+  "name": "uds",
+  "version": "0.0.1",
+  "description": "design system test",
+  "main": "index.js",
+  "scripts": {
+    "build:components": "lerna bootstrap && lerna exec npm run \"build\"",
+    "clean:components": "lerna exec npm run \"clean\"",
+    "publish:components": "lerna publish",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start-storybook -p 9001 -c .storybook --no-manager-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arximughal/design-system.git"
+  },
+  "author": "arximughal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arximughal/design-system/issues"
+  },
+  "homepage": "https://github.com/arximughal/design-system#readme",
+  "dependencies": {
+    "@storybook/cli": "6.4.13",
+    "@storybook/react": "6.4.13",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@babel/preset-env": "7.16.8",
+    "@babel/preset-react": "7.16.7",
+    "autoprefixer": "10.4.2",
+    "babel-loader": "8.2.3",
+    "cross-env": "7.0.3",
+    "css-loader": "^5.2.7",
+    "html-webpack-plugin": "^5.5.0",
+    "lerna": "^4.0.0",
+    "sass": "^1.48.0",
+    "sass-loader": "^10.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "5.66.0",
+    "webpack-cli": "4.9.1"
+  }
+}
