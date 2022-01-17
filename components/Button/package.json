@@ -1,7 +1,7 @@
 {
     "name": "@uds/button",
     "description": "Button component",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "license": "MIT",
     "author": "arximughal",
     "main": "dist/index.js",
@@ -17,5 +17,5 @@
         "react": "17.0.2",
         "react-dom": "17.0.2"
     },
-    "gitHead": "b6837f3b709d5055a812f21f30eaa692276504e5"
+    "gitHead": "fd55b147eb1f2d7561ff353b1f83439b6a08d163"
 }
