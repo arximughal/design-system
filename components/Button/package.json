@@ -1,7 +1,7 @@
 {
     "name": "@uds/button",
     "description": "Button component",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "license": "MIT",
     "author": "arximughal",
     "main": "dist/index.js",
