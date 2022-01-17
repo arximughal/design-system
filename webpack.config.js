@@ -10,8 +10,7 @@ module.exports = {
     output: {
         filename: pkg.main,
         library: {
-          type: 'umd',
-          name: 'DesignSystem'
+          type: 'umd'
         },
         libraryTarget: 'commonjs'
     },
