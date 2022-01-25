@@ -1,8 +1,23 @@
-.button {
+.button,
+.primary {
 	background-color: #785fe5;
 	border: 0;
 	border-radius: 25px;
 	color: #fff;
+	font-size: 14px;
+	padding: 12px 24px;
+	transition: background-color .2s ease-in-out;
+	
+	&:hover {
+		background-color: #6239fd;
+	}
+}
+
+.secondary {
+	background: #696969;
+	color: #fff;
+	border: 0;
+	border-radius: 25px;
 	font-size: 14px;
 	padding: 12px 24px;
 	transition: background-color .2s ease-in-out;

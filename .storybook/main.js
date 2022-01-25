@@ -1,5 +1,3 @@
-// .storybook/main.js
-
 const path = require('path');
 const aliases = require('../configs/aliases.config');
 // Export a function. Accept the base config as the only param.
@@ -21,4 +19,5 @@ module.exports = {
     // Return the altered config
     return config;
   },
+  addons: ['@storybook/addon-controls'],
 };
