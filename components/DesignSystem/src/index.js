@@ -1,7 +1,2 @@
-import Button from '@arximughal/button';
-import Avatar from '@arximughal/avatar';
-
-export default {
-	Button,
-	Avatar
-};
+export { default as Button } from '@arximughal/button';
+export { default as Avatar } from '@arximughal/avatar';
