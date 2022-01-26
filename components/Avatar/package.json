@@ -1,7 +1,7 @@
 {
     "name": "@arximughal/avatar",
     "description": "Avatar component",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "MIT",
     "author": "arximughal",
     "main": "dist/index.js",

@@ -1,7 +1,7 @@
 {
     "name": "@arximughal/uds",
     "description": "Design System",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "license": "MIT",
     "author": "arximughal",
     "main": "dist/index.js",
@@ -19,7 +19,7 @@
     },
     "gitHead": "5196b10e3ae1c2dbf2c1f27f86f1e2f0d9e87c67",
     "dependencies": {
-        "@arximughal/avatar": "^0.0.2",
+        "@arximughal/avatar": "^0.0.3",
         "@arximughal/button": "^0.0.9"
     }
 }
