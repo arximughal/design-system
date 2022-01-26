@@ -1,7 +1,7 @@
 {
     "name": "@arximughal/uds",
     "description": "Design System",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "license": "MIT",
     "author": "arximughal",
     "main": "dist/index.js",
