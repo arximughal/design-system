@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "start-storybook -p 9001 -c .storybook --no-manager-cache",
     "sb-docs": "start-storybook --docs --no-manager-cache",
-    "storybook-build": "build-storybook -c .storybook -o ./dist/storybook/"
+    "storybook-build": "build-storybook -c .storybook -o ./dist/storybook/",
+    "chromatic": "npx chromatic --project-token=a7ab976f77c2"
   },
   "repository": {
     "type": "git",
