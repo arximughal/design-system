@@ -1,7 +1,7 @@
 {
     "name": "@arximughal/button",
     "description": "Button component",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "license": "MIT",
     "author": "arximughal",
     "main": "dist/index.js",
@@ -14,9 +14,9 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "peerDependencies": {
+        "classnames": "^2.3.1",
         "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "classnames": "^2.3.1"
+        "react-dom": "17.0.2"
     },
     "gitHead": "5196b10e3ae1c2dbf2c1f27f86f1e2f0d9e87c67"
 }
