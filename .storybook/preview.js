@@ -14,7 +14,7 @@ export const parameters = {
 	},
 	options: {
 		storySort: {
-			order: ['HappyGoLucky'],
+			order: ['Docs', ['Intro', 'Color Theory']],
 		},
 	},
 };
