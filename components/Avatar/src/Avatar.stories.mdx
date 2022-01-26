@@ -1,0 +1,78 @@
+import {Canvas, Meta, Story} from "@storybook/addon-docs";
+import Avatar from './Avatar';
+
+<Meta
+	title="Design System/Avatar"
+	component={Avatar}
+	argTypes={{
+		size: {
+			description:
+				"Avatar comes in four sizes. In most cases, you’ll be fine with `default`.",
+			table: {
+				defaultValue: {
+					summary: "default",
+				},
+			},
+		},
+		src: {
+			description:
+				"Add your own image to test how it looks.",
+			table: {
+				defaultValue: {
+					summary: "default",
+				},
+			},
+		},
+	}}
+/>
+
+# Avatar
+
+### Use the Avatar for displaying call-to-actions in various places within the application.
+---
+
+One must discover the creator in order to feel the saint of hermetic sorrow. Mash up the broccoli with niffy rosemary, rum, jasmine, and cayenne pepper making sure to cover all of it.
+
+export const Template = (args) => <Avatar {...args} />;
+
+### Default Avatar
+
+<Story
+	name="Default"
+	args={{
+		size: "default",
+		src: "https://picsum.photos/75"
+	}}
+>
+	{Template.bind({})}
+</Story>
+
+#
+### Sizes
+
+4 sizes are supported.
+
+<Story name="Sizes">
+	<div>
+		<Avatar size="small" src="https://picsum.photos/75" />
+		<Avatar size="default" src="https://picsum.photos/75" />
+		<Avatar size="medium" src="https://picsum.photos/75" />
+		<Avatar size="large" src="https://picsum.photos/75" />
+	</div>
+</Story>
+
+### Playground
+
+Experiment with this story with the Controls addon in the Canvas tab.
+
+<Canvas>
+	<Story
+		name="Playground"
+		args={{
+			size: "default",
+			src: "https://picsum.photos/75"
+		}}
+	>
+		{Template.bind({})}
+	</Story>
+</Canvas>

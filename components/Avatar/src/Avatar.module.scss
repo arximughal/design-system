@@ -1,0 +1,25 @@
+.avatar {
+	border: 1px solid rgba(256, 256, 256, 0.5);
+	border-radius: 50%;
+	cursor: pointer;
+	&.default {
+		width: 42px;
+		height: 42px;
+	}
+	
+	&.small {
+		width: 32px;
+		height: 32px;
+	}
+	
+	&.medium {
+		width: 52px;
+		height: 52px;
+	}
+	
+	&.large {
+		width: 62px;
+		height: 62px;
+	}
+	
+}

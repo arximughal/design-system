@@ -5,8 +5,16 @@ export const parameters = {
 	controls: {
 		expanded: true,
 		matchers: {
-			color: /(background|color)$/i,
+			color: /(background|color|backgroundColor)$/i,
 			date: /Date$/,
 		},
-	}
+	},
+	docs: {
+		theme: themes.dark
+	},
+	options: {
+		storySort: {
+			order: ['HappyGoLucky'],
+		},
+	},
 };

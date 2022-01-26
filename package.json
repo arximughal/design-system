@@ -8,7 +8,8 @@
     "clean:components": "lerna exec npm run \"clean\"",
     "publish:components": "lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start-storybook -p 9001 -c .storybook --no-manager-cache"
+    "start": "start-storybook -p 9001 -c .storybook --no-manager-cache",
+    "sb-docs": "start-storybook --docs --no-manager-cache"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,12 @@
   "homepage": "https://github.com/arximughal/design-system#readme",
   "dependencies": {
     "@storybook/addon-controls": "^6.4.14",
+    "@storybook/addon-docs": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.14",
     "@storybook/cli": "6.4.13",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "6.4.13",
+    "classnames": "^2.3.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "storybook-addon-react-dev-tools": "^1.1.0"

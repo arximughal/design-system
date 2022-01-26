@@ -1,0 +1,152 @@
+import {Canvas, Meta, Story} from "@storybook/addon-docs";
+import Button from './Button';
+
+<Meta
+	title="Design System/Button"
+	component={Button}
+	argTypes={{
+		background: {
+			control: 'color',
+			description: 'Use this control to set the background color of the button',
+			table: {
+				type: { summary: 'Hex Code' },
+				defaultValue: { summary: '#785fe5' }
+			}
+		},
+		color: {
+			control: 'color',
+			description: 'Use this control to set the text color of the button',
+			table: {
+				type: { summary: 'Hex Code' },
+				defaultValue: { summary: '#ffffff' }
+			}
+		},
+		label: {
+			control: 'text',
+			description: 'Use this control to set the button label/text',
+			table: {
+				type: { summary: 'Text' },
+				defaultValue: { summary: 'Button' }
+			}
+		},
+		loading: {
+			control: "boolean",
+			description:
+				"Use the loading state to indicate that the button is in loading state",
+			table: {
+				type: {summary: "boolean"},
+				defaultValue: {summary: false},
+			},
+		},
+		size: {
+			description:
+				"Button comes in four sizes. In most cases, you’ll be fine with `medium`.",
+			table: {
+				defaultValue: {
+					summary: "medium",
+				},
+			},
+		},
+	}}
+/>
+
+# Button
+
+### Use the button for displaying call-to-actions in various places within the application.
+---
+
+One must discover the creator in order to feel the saint of hermetic sorrow. Mash up the broccoli with niffy rosemary, rum, jasmine, and cayenne pepper making sure to cover all of it.
+
+export const Template = (args) => <Button {...args}>{args.label}</Button>;
+
+### Default Button
+
+<Story
+	name="Default"
+	args={{
+		size: "default",
+		label: 'Button'
+	}}
+>
+	{Template.bind({})}
+</Story>
+
+#
+### Sizes
+
+4 sizes are supported.
+
+<Story name="Sizes">
+	<div>
+		<Button
+			size="small"
+		>
+			Small
+		</Button>
+		<Button
+			size="default"
+		>
+			Default
+		</Button>
+		<Button
+			size="medium"
+		>
+			Medium
+		</Button>
+		<Button
+			size="large"
+		>
+			Large
+		</Button>
+	</div>
+</Story>
+
+### Loading
+
+The loading state is used when the image or username is, well, loading.
+
+<Story name="Loading">
+	<div>
+		<Button
+			size="small"
+			loading
+		>
+			Small
+		</Button>
+		<Button
+			size="default"
+			loading
+		>
+			Default
+		</Button>
+		<Button
+			size="medium"
+			loading
+		>
+			Medium
+		</Button>
+		<Button
+			size="large"
+			loading
+		>
+			Large
+		</Button>
+	</div>
+</Story>
+
+### Playground
+
+Experiment with this story with the Controls addon in the Canvas tab.
+
+<Canvas>
+	<Story
+		name="Playground"
+		args={{
+			loading: false,
+			size: "default",
+			label: "Default"
+		}}
+	>
+		{Template.bind({})}
+	</Story>
+</Canvas>
