@@ -2,8 +2,11 @@ const path = require('path');
 const aliases = require('../configs/aliases.config');
 // Export a function. Accept the base config as the only param.
 module.exports = {
-  //stories: async (list) => [...list, ...findStories()],
-  stories: ['../components/**/src/*.stories.js', '../components/**/src/*.stories.mdx', '../components/DesignSystemIntro/*.stories.mdx'],
+  stories: [
+    '../DesignSystem/Components/**/src/*.stories.js',
+    '../DesignSystem/Components/**/src/*.stories.mdx',
+    '../DesignSystem/Docs/*.stories.mdx'
+  ],
   webpackFinal: async (config, { configType }) => {
     // get index of css rule
     const ruleCssIndex = config.module.rules.findIndex(
