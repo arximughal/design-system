@@ -1,2 +1,2 @@
-export { default as Button } from '@arximughal/button';
-export { default as Avatar } from '@arximughal/avatar';
+export default from '@arximughal/button';
+export default from '@arximughal/avatar';
