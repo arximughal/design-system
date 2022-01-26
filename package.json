@@ -9,7 +9,8 @@
     "publish:components": "lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "start-storybook -p 9001 -c .storybook --no-manager-cache",
-    "sb-docs": "start-storybook --docs --no-manager-cache"
+    "sb-docs": "start-storybook --docs --no-manager-cache",
+    "storybook-build": "build-storybook -c .storybook -o ./dist/storybook/"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "@storybook/theming": "^6.4.14",
     "autoprefixer": "10.4.2",
     "babel-loader": "8.2.3",
+    "chromatic": "^6.4.1",
     "cross-env": "7.0.3",
     "css-loader": "^5.2.7",
     "html-webpack-plugin": "^5.5.0",
